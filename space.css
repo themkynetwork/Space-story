@@ -1,0 +1,114 @@
+body{
+    background: #2E3D73;;
+    height: auto;
+    width: auto;
+}
+.space{
+    width: 100%;
+}
+.worldwide{
+    position: absolute;
+width: 463px;
+height: 463px;
+left: -65px;
+top: 627px;
+animation: worldwide 30.5s ease infinite;
+}
+
+.rocket{
+    position: absolute;
+width: 197px;
+height: 197px;
+left: 462px;
+top: 538px;
+z-index: 1;
+animation: rocket 9.5s ease infinite;
+animation-direction: normal;
+}
+.sparkles{
+    position: absolute;
+width: 66.52px;
+height: 66.52px;
+left: 362px;
+top: 668.48px;
+z-index: 1;
+animation: spark 9.5s  ease  infinite;
+}
+.mars{
+    position: absolute;
+width: 687px;
+height: 687px;
+left: 986px;
+top: -171px;
+animation: mars 30.5s ease infinite;
+}
+.astronaut{
+    position: absolute;
+width: 144px;
+height: 144px;
+left: 830px;
+top: 243px;
+animation: astronaut 9.5s ease infinite ;
+}
+.galaxy{
+    position: absolute;
+width: 290px;
+height: 239px;
+left: 145px;
+top: -33px;
+animation: galaxy 30.5s ease infinite;
+}
+@keyframes rocket{
+    0%{
+        transform: translate(-50%,90%);
+    }
+    100%{
+    }
+}
+@keyframes worldwide{
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes astronaut{
+    0%{
+        transform: translate(-50%,90%);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes spark{
+    0%{
+        transform: translate(-50%,90%);
+    }
+    100%{
+        opacity: 0.07;
+    }
+}
+@keyframes mars{
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes galaxy{
+    0%{
+        transform: translate(-50%,50%) ;
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+}
+
+@media screen and (max-width:768px){
+    .space{
+        width: 100%;
+    }
+}
